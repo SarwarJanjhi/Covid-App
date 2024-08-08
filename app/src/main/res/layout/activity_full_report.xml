@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- ImageView -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_flag"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginStart="@dimen/_97sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:elevation="@dimen/_20sdp"
+        android:src="@drawable/ic_launcher_background"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="@dimen/_2sdp"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:background="@drawable/card_background"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_countryname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:text="pakistan"
+            android:textColor="#333333"
+            android:textSize="@dimen/_23sdp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_60sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_130sdp"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:cardElevation="@dimen/_10sdp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/rectangle_bg">
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_15sdp"
+                        android:text="Active" />
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:src="@drawable/activeicon"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_active"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="#2F45C5"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_23sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_130sdp"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:cardElevation="@dimen/_10sdp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/rectangle_bg"
+                    android:backgroundTint="#3CF1EBF1">
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_15sdp"
+                        android:text="Cases" />
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:src="@drawable/casesicon"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_cases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/teal_700"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_23sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_130sdp"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:cardElevation="@dimen/_10sdp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/rectangle_bg">
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_15sdp"
+                        android:text="Deaths" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:src="@drawable/deathlogo"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_deaths"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/red"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_23sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_130sdp"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:cardElevation="@dimen/_10sdp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/rectangle_bg">
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_15sdp"
+                        android:text="Recovered" />
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:src="@drawable/recoverdicon2"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_recovred"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Green"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_23sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Add more views as needed -->
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
